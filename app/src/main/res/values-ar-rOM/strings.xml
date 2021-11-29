@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">تحدي100سؤال</string>
+    <string name="yah">نعم</string>
+    <string name="na">لا</string>
+    <string name="finish">"إنتهى الوقت . . . "</string>
+    <string name="exit2">خروج</string>
+    <string name="re">إعادة</string>
+    <string name="hs">أعلى النتائج:</string>
+    <string name="title">تنبية!!!</string>
+    <string name="exit">هل أنت متأكد أنك تريد الخروج؟</string>
+    <string name="result">النتيجة</string>
+    <string name="time">الوقت المتبقي: </string>
+    <string name="qnumber">"سؤال رقم: "</string>
+    <string name="start">إبدا</string>
+    <string name="rate">تقيم</string>
+    <string name="email">راسلنا</string>
+    <string name="share">مشاركة</string>
+
+</resources>

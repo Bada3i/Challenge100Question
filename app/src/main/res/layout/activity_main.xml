@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:id="@+id/ly_1"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/magic_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/audio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/ic_volume_up_black_24dp"
+                    android:onClick="playStop"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp">
+
+                <TextView
+                    android:id="@+id/timeDownName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:text="@string/time"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/timeDown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textSize="16dp"
+                    android:textColor="@android:color/black" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:text="@string/qnumber"
+                android:textStyle="italic"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/countLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Q1"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/questionLabel"
+                android:layout_width="@dimen/textqution_width"
+                android:layout_height="@dimen/textqution_height"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/textview_stroke"
+                android:gravity="center_horizontal"
+                android:text="Question"
+                android:textStyle="bold"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/answerBth1"
+                android:layout_width="@dimen/answerBth_width"
+                android:layout_height="@dimen/answerBth_height"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_animation"
+                android:onClick="checkAnswer"
+                android:text="answer1"
+                android:textSize="20dp"/>
+
+            <Button
+                android:id="@+id/answerBth2"
+                android:layout_width="@dimen/answerBth_width"
+                android:layout_height="@dimen/answerBth_height"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_animation"
+                android:onClick="checkAnswer"
+                android:text="answer2"
+                android:textSize="20dp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/answerBth3"
+                android:layout_width="@dimen/answerBth_width"
+                android:layout_height="@dimen/answerBth_height"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_animation"
+                android:onClick="checkAnswer"
+                android:text="answer3"
+                android:textSize="20dp"/>
+
+            <Button
+                android:id="@+id/answerBth4"
+                android:layout_width="@dimen/answerBth_width"
+                android:layout_height="@dimen/answerBth_height"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_animation"
+                android:onClick="checkAnswer"
+                android:text="answer4"
+                android:textSize="20dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0">
+
+        <com.appodeal.ads.BannerView
+            android:id="@+id/appodealBannerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+
+    </LinearLayout>
+
+</LinearLayout>

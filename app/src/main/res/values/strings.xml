@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Challenge100Question</string>
+    <string name="exit">Are you sure you want to exit? </string>
+    <string name="title">Warning!!!</string>
+    <string name="yah">Yes</string>
+    <string name="na">No</string>
+    <string name="finish">Time is over . . .</string>
+    <string name="exit2">Exit</string>
+    <string name="re">Replay</string>
+    <string name="result">Result</string>
+    <string name="hs">Highest Score: </string>
+    <string name="time">Remaining time: </string>
+    <string name="qnumber">Question Number: </string>
+    <string name="start">Start</string>
+    <string name="share">Share</string>
+    <string name="rate">Rate</string>
+    <string name="email">Email</string>
+
+</resources>
